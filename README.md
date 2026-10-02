@@ -1,9 +1,27 @@
 # Pulse — Real-Time System Monitoring Platform
 
-Pulse is a local system-monitoring demo built with React and FastAPI. It streams
-**simulated** CPU, memory, temperature, and network metrics to a live dashboard,
-flags threshold violations, and stores incident transitions in SQLite. It does
-not read actual hardware or operating-system metrics.
+Pulse is a full-stack monitoring platform that streams simulated system telemetry
+to a live React dashboard using WebSockets. It visualizes CPU, memory, temperature,
+and network activity in real time, detects threshold anomalies, tracks incidents,
+and persists incident transitions in SQLite.
+
+Built with React, TypeScript, FastAPI, WebSockets, Recharts, and SQLite.
+
+> Pulse currently uses simulated telemetry rather than reading host operating-system metrics.
+
+## Screenshot
+
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/5b357399-3540-4c45-ac83-d388ed57693c" />
+
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/34575df4-81e2-412f-bd1c-4cbe98167ffa" />
+
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/3f38bf5e-3462-4d77-b4de-d29f9b66cc4b" />
+
+
+<!-- Once the image exists, replace the placeholder with:
+![Pulse dashboard showing live metrics, charts, and incidents](docs/pulse-dashboard.png)
+-->
+
 
 ## Key features
 
@@ -181,14 +199,6 @@ curl http://127.0.0.1:8000/health
 curl http://127.0.0.1:8000/telemetry
 curl http://127.0.0.1:8000/incidents
 ```
-
-## Screenshot
-
-_Add a screenshot of the running Pulse dashboard here._
-
-<!-- Once the image exists, replace the placeholder with:
-![Pulse dashboard showing live metrics, charts, and incidents](docs/pulse-dashboard.png)
--->
 
 ## Current scope
 

@@ -1,0 +1,26 @@
+# Python environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Dependencies and generated builds
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+*.egg-info/
+coverage/
+
+# SQLite database and sidecar files
+pulse.db
+pulse.db-*
+
+# Local configuration, logs, and OS files
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
